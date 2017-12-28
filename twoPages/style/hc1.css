@@ -1,0 +1,436 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?1ewkup');
+  src:  url('../fonts/icomoon.eot?1ewkup#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1ewkup') format('truetype'),
+    url('../fonts/icomoon.woff?1ewkup') format('woff'),
+    url('../fonts/icomoon.svg?1ewkup#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-a:before {
+  content: "\e900";
+}
+.icon-icon-aa:before {
+  content: "\e901";
+}
+.icon-icon-ab:before {
+  content: "\e902";
+}
+.icon-icon-ac:before {
+  content: "\e903";
+}
+.icon-icon-ad:before {
+  content: "\e904";
+}
+.icon-icon-ae:before {
+  content: "\e905";
+}
+.icon-icon-af:before {
+  content: "\e906";
+}
+.icon-icon-ag:before {
+  content: "\e907";
+}
+.icon-icon-ah:before {
+  content: "\e908";
+}
+.icon-icon-ai:before {
+  content: "\e909";
+}
+.icon-icon-aj:before {
+  content: "\e90a";
+}
+.icon-icon-ak:before {
+  content: "\e90b";
+}
+.icon-icon-al:before {
+  content: "\e90c";
+}
+.icon-icon-am:before {
+  content: "\e90d";
+}
+.icon-icon-an:before {
+  content: "\e90e";
+}
+.icon-icon-ao:before {
+  content: "\e90f";
+}
+.icon-icon-ap:before {
+  content: "\e910";
+}
+.icon-icon-aq:before {
+  content: "\e911";
+}
+.icon-icon-ar:before {
+  content: "\e912";
+}
+.icon-icon-as-copy:before {
+  content: "\e913";
+}
+.icon-icon-as:before {
+  content: "\e914";
+}
+.icon-arrow-right:before {
+  content: "\ea34";
+}
+.icon-arrow-left:before {
+  content: "\ea38";
+}
+*{margin: 0px;padding: 0px;}
+
+
+      .container{
+        width: 100%;
+        min-width: 1600px;
+      }
+      .header{
+        font-weight: 100%;
+        height: 56px;
+        background-color: #2A4765;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+        .wdl{
+        margin-top: 16px;
+        margin-right: 15%;
+        font-family:'MicrosoftYaHei';
+        font-size:18px;
+        color:#ffffff;
+        letter-spacing:1.34px;
+        text-align:left;
+      }
+      .content{
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        margin-top: 39px;
+      }
+      .page{
+        width: 67%;
+        background-color: white;
+        border-width: 1px 1px 1px 1px;
+        border-style: solid;
+        border-color: #dedede;
+        min-height: 500px;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+      }
+      .pageTop{
+        height: 70px;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: #dedede;
+      }
+      .zjxt{
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 23px;
+        margin-left: 29px;
+        font-family:MicrosoftYaHei;
+        font-size:20px;
+        color:#333333;
+        letter-spacing:1.49px;
+        text-align:left;
+      }
+      .grayBac{
+        background-color: #F5F5F5;
+      }
+      .iconb{
+        width:15px;
+        height:14px;
+        margin:auto 8px auto 6px;
+      }
+      .jjbtn{
+        display: -webkit-flex;
+        display: flex;
+        border:1px solid #e0e0e0;
+        border-radius:2px;
+        width:62px;
+        height:24px;
+        align-items: center;
+        margin-left: 16px;
+      }
+      .jj{
+        font-family:MicrosoftYaHei;
+        font-size:14px;
+        letter-spacing:1.04px;
+        text-align:left;
+      }
+      .mj{
+        font-family:MicrosoftYaHei;
+        font-size:14px;
+        letter-spacing:1.04px;
+        text-align:left;
+      }
+      .mjbtn{
+        display: -webkit-flex;
+        display: flex;
+        border:1px solid #e0e0e0;
+        border-radius:2px;
+        width:64px;
+        height:24px;
+        align-items: center;
+        margin-left:10px;
+      }
+      .btnList{
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 21px;
+      }
+      .pbContenter{
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .pchead{
+        margin-top: 18px;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        height: 49px;
+        width: 97%;
+        border-style: solid;
+        border-width: 1px 1px 0px 1px;
+        border-color: #dedede;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .pcspan{
+        border:1px solid #dedede;
+        width: 70px;
+        height: 35px;
+      }
+      .pcSelect{
+        border:1px solid #dedede;
+        height: 35px;
+      }
+      .pcspan1{
+        font-family:MicrosoftYaHei;
+        font-size:14px;
+        color:#666666;
+        letter-spacing:1.04px;
+        text-align:left;
+        opacity: 0.5;
+        line-height: 35px;
+      }
+      .pageTop{
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+      }
+      .toLeft{
+        margin-top: 15px;
+        background:#dedede;
+        border-radius:3px 0 0 3px;
+        width:40px;
+        height:40px;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .toRight{
+        margin-top: 15px;
+        background:#dedede;
+        border-radius:3px 0 0 3px;
+        width:40px;
+        height:40px;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        align-self: flex-end;
+        margin-right: 240px;
+
+      }
+      .lrbtn{
+        width: 20px;
+        height: 12px;
+      }
+      .paTabdiv{
+        width: 97%;
+        border-style: solid;
+        border-width: 0px 1px 1px 1px;
+        border-color: #dedede;
+      }
+      .pcTab{
+        width: 100%;
+      }
+      .w1{
+        width: 3%;
+      }
+      .w2{
+        width:4.5%;
+      }
+      .w3{
+        width: 6%;
+      }
+      .pcTabTr{
+        height: 49px;
+      }
+      .pcTab td{
+        border-style: solid;
+        border-width: 0px 1px 1px 1px;
+        border-color: #dedede;
+        text-align: center;
+        font-family:PingFangSC-Regular;
+        font-size:14px;
+        letter-spacing:0.58px;
+        white-space:nowrap;
+      }
+      .pcTab th{
+        border-style: solid;
+        border-width: 1px 1px 0px 1px;
+        border-color: #dedede;
+        font-family:MicrosoftYaHei-Bold;
+        font-size:14px;
+        color:#666666;
+        letter-spacing:0;
+      }
+      .red{
+        color: red;
+      }
+      .yellow{
+        color: #FFAC07;
+      }
+      .color666666{
+        color:#666666;
+      }
+      .tabTabChex{
+        opacity:0.54;
+        background:#999999;
+        width:16px;
+        height:16px;
+      }
+      .ztImg{
+        width:23px;
+        height:21px;
+      }
+      .hidPage{
+        position: absolute;
+        width:240px; 
+        padding-bottom: 30px;
+        align-self: flex-end;
+        background-color: white;
+        border-width: 0px 0px 1px 1px;
+        border-style: solid;
+        border-color: #dedede;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .ggPart{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        margin-top: 26px;
+        align-self: center;
+        background:#fffff5;
+        border:1px solid #faf2a7;
+        border-radius:6px;
+        width:82%;
+        height:253px;
+      }
+      .gg{
+        font-family:MicrosoftYaHei;
+        font-size:16px;
+        color:#333333;
+        letter-spacing:1.19px;
+        margin-top: 13px;
+        margin-left: 13px;
+      }
+      .sm{
+        font-family:MicrosoftYaHei;
+        font-size:14px;
+        color:#666666;
+        letter-spacing:1.04px;
+        line-height:24px;
+        text-align:left;
+        margin-top: 7px;
+        margin-left: 13px;
+      }
+      .icons{
+        margin-left: 13px
+      }
+      .icon{
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        margin:13px auto 13px auto;
+      }
+      .icona{
+        margin-right: 8px;
+        margin-left: 8px;
+      }
+      .iconTex{
+        font-family:MicrosoftYaHei;
+        font-size:16px;
+        color:#999999;
+        letter-spacing:1.19px;
+        text-align:left;
+      }
+      .ywxg{
+        margin-top: 30px;
+        margin-left: 9%;
+      }
+      .line{
+        width: 82%;
+        border-style: solid;
+        border-color: #dedede;
+        border-width: 1px 0px 0px 0px;
+        align-self: center;
+        margin-top: 30px;
+      }
+      .jjmjBtn{
+        width: 90%;
+        height: 30px;
+        display: -webkit-flex;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        border-radius:2px;
+        margin-top: 20px;
+      }
+      .imgB{
+        width: 15px;
+        height: 15px;
+        margin-left: 20px;
+        margin-right: 8px;
+      }
+      .white{
+        color: white;
+      }
+      .dyapBtn{
+        width: 90%;
+        height: 30px;
+        display: -webkit-flex;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        border-radius:2px;
+        margin-top: 20px;
+      }
+
+    

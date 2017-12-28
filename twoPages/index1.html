@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>无标题文档</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style/hc1.css"/>
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>            
+    <script>
+        $(function(){
+            var data=JSON.parse('{"data":[{"zt":"1","shsj":"8/9/9:00","shdd":"苏州","jjsj":"8/9/9:00","ssfb":"装备解决方案1","fbcs":"PGM0000345","zg":"薛敬德1","zl":"陈少波1","csmc":"检验看板","xnjydw":"【XNZZ201003】","sl":"20","wlh":"XNZZ201003","lx":"加工","wlmc":"切刀","cgdh":"17000001"},{"zt":"2","shsj":"8/9/9:00","shdd":"苏州","jjsj":"8/9/9:00","ssfb":"装备解决方案1","fbcs":"PGM0000345","zg":"薛敬德2","zl":"陈少波2","csmc":"检验看板","xnjydw":"【XNZZ201003】","sl":"20","wlh":"XNZZ201003","lx":"加工","wlmc":"切刀","cgdh":"17000001"},{"zt":"3","shsj":"8/9/9:00","shdd":"苏州","jjsj":"8/9/9:00","ssfb":"装备解决方案1","fbcs":"PGM0000345","zg":"薛敬德3","zl":"陈少波3","csmc":"检验看板","xnjydw":"【XNZZ201003】","sl":"20","wlh":"XNZZ201003","lx":"加工","wlmc":"切刀","cgdh":"17000001"},{"zt":"4","shsj":"8/9/9:00","shdd":"苏州","jjsj":"8/9/9:00","ssfb":"装备解决方案1","fbcs":"PGM0000345","zg":"薛敬德4","zl":"陈少波4","csmc":"检验看板","xnjydw":"【XNZZ201003】","sl":"20","wlh":"XNZZ201003","lx":"加工","wlmc":"切刀","cgdh":"17000001"},{"zt":"5","shsj":"8/9/9:00","shdd":"苏州","jjsj":"8/9/9:00","ssfb":"装备解决方案1","fbcs":"PGM0000345","zg":"薛敬德5","zl":"陈少波5","csmc":"检验看板","xnjydw":"【XNZZ201003】","sl":"20","wlh":"XNZZ201003","lx":"加工","wlmc":"切刀","cgdh":"17000001"},{"shsj":"8/9/9:00","shdd":"苏州","jjsj":"8/9/9:00","ssfb":"装备解决方案1","fbcs":"PGM0000345","zg":"薛敬德","zl":"陈少波","csmc":"检验看板","xnjydw":"【XNZZ201003】","sl":"20","wlh":"XNZZ201003","lx":"加工","wlmc":"切刀","cgdh":"17000001"},{"shsj":"8/9/9:00","shdd":"苏州","jjsj":"8/9/9:00","ssfb":"装备解决方案1","fbcs":"PGM0000345","zg":"薛敬德","zl":"陈少波","csmc":"检验看板","xnjydw":"【XNZZ201003】","sl":"20","wlh":"XNZZ201003","lx":"加工","wlmc":"切刀","cgdh":"17000001"}]}');
+
+            loadAll(data);
+            grayTd();
+            $('.hidPage').hide();
+            $('.toRight').hide();
+
+            $('.jjbtn').click(function(){
+                $('.jjbtn').css("background","#419bf9");
+                $('.mjbtn').css("background","#ffffff");
+                $('.mj').css("color","#666666");
+                $('.jj').css("color","#ffffff");
+                $('.aa').css("color","#666666");
+                $('.a').css("color","#ffffff");
+                $('.jjmjBtn').css("background","#ffffff");
+                $('.dapBtn').css("background","#ffffff");
+                $('.yapBtn').css("background","#ffffff");
+                $('.aj').css("color","#272822");
+                $('.ak').css("color","#272822");
+                $('.al').css("color","#272822");
+                $('.jjmj').css("color","#272822");
+                $('.yap').css("color","#272822");
+                $('.dap').css("color","#272822");
+
+                $('.pcTab tBody').html("");
+                var num=0;
+                for (let i = 0; i < data['data'].length; i++) {
+
+                        if(data['data'][i]['zt']==3){
+                            num=num+1;
+                            let exitH=$('.pcTab tBody').html();
+                            $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                            for (x in data['data'][i]) {
+                                $("."+x).eq(num-1).text(data['data'][i][x]);
+                            };
+                            console.log($('.ztImg').eq(num-1)+"--"+num);
+                            $('.ztImg').eq(num-1).addClass("icon-icon-ag red");
+
+
+                        }else if(data['data'][i]['zt']==4){
+                            num=num+1;
+                            let exitH=$('.pcTab tBody').html();
+                            $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                            for (x in data['data'][i]) {
+                                $("."+x).eq(num-1).text(data['data'][i][x]);
+                            };
+                            $('.ztImg').eq(num-1).addClass("icon-icon-ag yellow");
+                        }else if(data['data'][i]['zt']==1){
+                            num=num+1;
+                            let exitH=$('.pcTab tBody').html();
+                            $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                            for (x in data['data'][i]) {
+                                $("."+x).eq(num-1).text(data['data'][i][x]);
+                            };
+                            $('.ztImg').eq(num-1).addClass("icon-icon-ai yellow");
+
+                        };
+                    }
+                     grayTd();
+                });
+
+            $('.mjbtn').click(function(){
+                $('.aa').css("color","#ffffff");
+                $('.a').css("color","#666666");
+                $('.jjbtn').css("background","#ffffff");
+                $('.mjbtn').css("background","#419bf9");
+                $('.jj').css("color","#666666");
+                $('.mj').css("color","#ffffff");
+                $('.jjmjBtn').css("background","#ffffff");
+                $('.dapBtn').css("background","#ffffff");
+                $('.yapBtn').css("background","#ffffff");
+                $('.aj').css("color","#272822");
+                $('.ak').css("color","#272822");
+                $('.al').css("color","#272822");
+                $('.jjmj').css("color","#272822");
+                $('.yap').css("color","#272822");
+                $('.dap').css("color","#272822");
+
+                $('.pcTab tBody').html("");
+                var num=0;
+                for (let i = 0; i < data['data'].length; i++) {
+                        if(data['data'][i]['zt']==2){
+                            num=num+1;
+                            let exitH=$('.pcTab tBody').html();
+                            $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                            for (x in data['data'][i]) {
+                                $("."+x).eq(num-1).text(data['data'][i][x]);
+                            };
+                            $('.ztImg').eq(num-1).addClass("icon-icon-ah red");
+
+                        }else if(data['data'][i]['zt']==5){
+                            num=num+1;
+                            let exitH=$('.pcTab tBody').html();
+                            $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                            for (x in data['data'][i]) {
+                                $("."+x).eq(num-1).text(data['data'][i][x]);
+                            };
+                            $('.ztImg').eq(num-1).addClass("icon-icon-af red");
+                        };
+                                        
+                    }
+                     grayTd();
+                });
+
+            $('.jjmjBtn').click(function(){
+                $('.aj').css("color","#ffffff");
+                $('.ak').css("color","#272822");
+                $('.al').css("color","#272822");
+                $('.jjmj').css("color","#ffffff");
+                $('.yap').css("color","#272822");
+                $('.dap').css("color","#272822");
+                $('.dapBtn').css("background","#ffffff");
+                $('.yapBtn').css("background","#ffffff");
+                $(this).css("background","#419bf9");
+                $('.jjbtn').css("background","#ffffff");
+                $('.mjbtn').css("background","#ffffff");
+                $('.jj').css("color","#272822");
+                $('.mj').css("color","#272822");
+                $('.a').css("color","#272822");
+                $('.aa').css("color","#272822");
+                $('.pcTab tBody').html("");
+                var num=0;
+                for (let i = 0; i < data['data'].length; i++) {
+                        if(data['data'][i]['zt']!=null){
+                            num=num+1;
+                            let exitH=$('.pcTab tBody').html();
+                            $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                            for (x in data['data'][i]) {
+                                $("."+x).eq(num-1).text(data['data'][i][x]);
+                            };
+                            if (data['data'][i]['zt']==1) {
+                                $('.ztImg').eq(num-1).addClass("icon-icon-ai yellow");
+                            }else if(data['data'][i]['zt']==2){
+                                $('.ztImg').eq(num-1).addClass("icon-icon-ah red");
+                            }else if(data['data'][i]['zt']==3){
+                                $('.ztImg').eq(num-1).addClass("icon-icon-ag red");
+                            }else if(data['data'][i]['zt']==4){
+                                $('.ztImg').eq(num-1).addClass("icon-icon-ag yellow");
+                            }else if(data['data'][i]['zt']==5){
+                                $('.ztImg').eq(num-1).addClass("icon-icon-af red");
+                            };
+                         };
+                        }
+                         grayTd();
+                    });
+
+            $('.yapBtn').click(function(){
+                $('.jjmj').css("color","#272822");
+                $('.yap').css("color","#ffffff");
+                $('.dap').css("color","#272822");
+                $('.aj').css("color","#272822");
+                $('.ak').css("color","#ffffff");
+                $('.al').css("color","#272822");
+                $(this).css("background","#419bf9");
+                $('.jjmjBtn').css("background","#ffffff");
+                $('.dapBtn').css("background","#ffffff");
+                $('.jjbtn').css("background","#ffffff");
+                $('.mjbtn').css("background","#ffffff");
+                $('.jj').css("color","#272822");
+                $('.mj').css("color","#272822");
+                $('.a').css("color","#272822");
+                $('.aa').css("color","#272822");
+                $('.pcTab tBody').html("");
+                var num=0;
+                for (let i = 0; i < data['data'].length; i++) {
+                        if(data['data'][i]['zt']==1){
+                            num=num+1;
+                            let exitH=$('.pcTab tBody').html();
+                            $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                            for (x in data['data'][i]) {
+                                $("."+x).eq(num-1).text(data['data'][i][x]);
+                            };
+                            $('.ztImg').eq(num-1).addClass("icon-icon-ai yellow");
+
+                        }else if(data['data'][i]['zt']==5){
+                            num=num+1;
+                            let exitH=$('.pcTab tBody').html();
+                            $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                            for (x in data['data'][i]) {
+                                $("."+x).eq(num-1).text(data['data'][i][x]);
+                            };
+                            $('.ztImg').eq(num-1).addClass("icon-icon-af red");
+                        }else if(data['data'][i]['zt']==3){
+                            num=num+1;
+                            let exitH=$('.pcTab tBody').html();
+                            $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                            for (x in data['data'][i]) {
+                                $("."+x).eq(num-1).text(data['data'][i][x]);
+                            };
+                            $('.ztImg').eq(num-1).addClass("icon-icon-ag red");
+
+                        }else if(data['data'][i]['zt']==4){
+                            num=num+1;
+                            let exitH=$('.pcTab tBody').html();
+                            $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                            for (x in data['data'][i]) {
+                                $("."+x).eq(num-1).text(data['data'][i][x]);
+                            };
+                            $('.ztImg').eq(num-1).addClass("icon-icon-ag yellow");
+                        };
+                    }
+                     grayTd();
+                });
+
+            $('.dapBtn').click(function(){
+                $('.jjmj').css("color","#272822");
+                $('.dap').css("color","#ffffff");
+                $('.yap').css("color","#272822");
+                $('.aj').css("color","#272822");
+                $('.al').css("color","#ffffff");
+                $('.ak').css("color","#272822");
+                $(this).css("background","#419bf9");
+                $('.jjmjBtn').css("background","#ffffff");
+                $('.yapBtn').css("background","#ffffff");
+                $(this).css("background","#419bf9");
+                $('.jjbtn').css("background","#ffffff");
+                $('.mjbtn').css("background","#ffffff");
+                $('.jj').css("color","#272822");
+                $('.mj').css("color","#272822");
+                $('.a').css("color","#272822");
+                $('.aa').css("color","#272822");
+                $('.pcTab tBody').html("");
+                var num=0;
+                for (let i = 0; i < data['data'].length; i++) {
+                        if(data['data'][i]['zt']==2){
+                            num=num+1;
+                            let exitH=$('.pcTab tBody').html();
+                            $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                            for (x in data['data'][i]) {
+                                $("."+x).eq(num-1).text(data['data'][i][x]);
+                            };
+                            $('.ztImg').eq(num-1).addClass("icon-icon-ah red");
+
+                        }
+                    }
+                     grayTd();
+                });
+
+            $('.toLeft').click(function(){
+                $('.hidPage').show();
+                $('.toRight').show();
+            });
+            $('.toRight').click(function(){
+                $('.hidPage').hide();
+                $('.toRight').hide();
+            });
+
+
+
+        });
+        function loadAll(data){
+            $('.jjmjBtn').css("background","#ffffff");
+            $('.dapBtn').css("background","#ffffff");
+            $('.yapBtn').css("background","#ffffff");
+            $('.aj').css("color","#272822");
+            $('.ak').css("color","#272822");
+            $('.al').css("color","#272822");
+            $('.jjmj').css("color","#272822");
+            $('.yap').css("color","#272822");
+            $('.dap').css("color","#272822");
+
+            $('.jjbtn').css("background","#ffffff");
+            $('.mjbtn').css("background","#ffffff");
+            $('.jj').css("color","#272822");
+            $('.mj').css("color","#272822");
+            $('.a').css("color","#272822");
+            $('.aa').css("color","#272822");
+            for (let i = 0; i < data['data'].length; i++) {
+                let exitH=$('.pcTab tBody').html();
+                $('.pcTab tBody').html(exitH+'<tr class="pcTabTr"><td><input class="tabTabChex" type="checkbox" name=""></td><td><span class="ztImg"></span></td><td class="shsj color666666"></td><td class="shdd color666666"></td><td class="jjsj color666666"></td><td class="ssfb color666666"></td><td class="fbcs color666666"></td><td class="zg color666666"></td><td class="zl color666666"></td><td class="csmc color666666"></td><td class="xnjydw color666666"></td><td class="sl red"></td><td class="wlh color666666"></td><td class="lx color666666"></td><td class="wlmc color666666"></td><td class="cgdh color666666"></td></tr>');
+                for (x in data['data'][i]) {
+                    $("."+x).eq(i).text(data['data'][i][x]);
+                    if (data['data'][i]['zt']==1) {
+                        $('.ztImg').eq(i).addClass("icon-icon-ai yellow");
+                    }else if(data['data'][i]['zt']==2){
+                        $('.ztImg').eq(i).addClass("icon-icon-ah red");
+                    }else if(data['data'][i]['zt']==3){
+                        $('.ztImg').eq(i).addClass("icon-icon-ag red");
+                    }else if(data['data'][i]['zt']==4){
+                        $('.ztImg').eq(i).addClass("icon-icon-ag yellow");
+                    }else if(data['data'][i]['zt']==5){
+                        $('.ztImg').eq(i).addClass("icon-icon-af red");;
+                    }else{
+                         $('.ztImg').eq(i).text('　');
+                    };
+               };
+            }
+
+        }
+
+        function grayTd(){
+            $('.pcTab tr:even').css("background-color","#f5f5f5");
+        };
+    </script>
+    <style type="text/css">
+</style>
+  </head>
+  <body class="grayBac">
+    <div id="container" class="container">
+      <div id="header" class="header">
+        <span class="wdl">未登录</span>
+      </div>
+      <div id="content" class="content">
+        <div id="page" class="page">
+            <span class="toRight"><span class="icon-arrow-right"></span></span>
+            <div class="hidPage">
+                <div class="ggPart">
+                    <span class="gg">公告</span>
+                    <span class="sm">下面是图标说明</span>
+                    <div class="icons">
+                        <span class="icon">
+                            <span class="red icona icon-icon-af"></span>
+                            <span class="iconTex">免检件</span>
+                        </span>
+                        <span class="icon">
+                            <span class="red icona icon-icon-ag"></span>
+                            <span class="iconTex">计划加急</span>
+                        </span>
+                        <span class="icon">
+                            <span class="yellow icona icon-icon-ag"></span>
+                            <span class="iconTex">临时加急</span>
+                        </span>
+                        <span class="icon">
+                            <span class="yellow icona icon-icon-ah"></span>
+                            <span class="iconTex">待排免检件</span>
+                        </span>
+                        <span class="icon">
+                            <span class="red icona icon-icon-ai"></span>
+                            <span class="iconTex">待牌临时加急</span>
+                        </span>
+                    </div>
+                </div>
+                <span class="ywxg">与我相关</span>
+                <span class="line"></span>
+                <div class="jjmjBtn">
+                    <span class="icona icon-icon-aj aj"></span>
+                    <span class="white jjmj">加急&amp;免检</span>
+                </div>
+                <div class="dyapBtn yapBtn">
+                    <span class="icona icon-icon-ak ak"></span>
+                    <span class="yap">已安排</span>
+                </div>
+                <div class="dyapBtn dapBtn">
+                    <span class="icona icon-icon-al al"></span>
+                    <span class="dap">待安排</span>
+                </div>
+                    
+
+            </div>
+          <div class="pageTop">
+            <span class="zjxt">质监系统</span>
+            <div class="jiantou">
+                <span class="toLeft"><span class="icon-arrow-left"></span></span>
+            </div>
+          </div>
+          <div class="pageBody">
+            <div class="btnList">
+              <div class="jjbtn">
+                <span class="iconb icon-icon-a a"></span>
+                <span class="jj">加急</span>
+              </div>
+              <div class="mjbtn">
+                <span class="iconb icon-icon-aa aa"></span>
+                <span class="mj">免检</span>
+              </div>
+            </div>
+            <div class="pbContenter">
+                <div class="pchead">
+                    <select class="pcSelect">
+                        <option value="jiaji">加急</option>
+                        <option value="mianjian">免检</option>
+                    </select>
+                    <span class="pcspan pcspan1">查询..</span>
+                    <span class="pcspan pcspan2"></span>
+                    <span class="pcspan pcspan3"></span>
+                    <span class="pcspan pcspan4"></span>
+                    <span class="pcspan pcspan5"></span>
+                    <span class="pcspan pcspan6"></span>
+                    <span class="pcspan pcspan7"></span>
+                    <span class="pcspan pcspan8"></span>
+                    <span class="pcspan pcspan9"></span>
+                    <span class="pcspan pcspan10"></span>
+                    <span class="pcspan pcspan11"></span>
+                    <span class="pcspan pcspan12"></span>
+                    <span class="pcspan pcspan13"></span>
+                    <span class="pcspan pcspan14"></span>
+                </div>
+                <div class="paTabdiv">
+                <table class="pcTab" cellpadding="0" cellspacing="0">
+                    <thead>
+                     <tr class="pcTabTr">
+                        <th class="w1">#</th>
+                        <th class="w1">状态</th>
+                        <th class="w3">收货时间</th>
+                        <th class="w3">收货地点</th>
+                        <th class="w3">加急时间</th>
+                        <th class="w4">所属分部</th>
+                        <th class="w4">分布场所</th>
+                        <th class="w2">主管</th>
+                        <th class="w2">助理</th>
+                        <th class="w3">场所名称</th>
+                        <th class="w4">虚拟经营单位</th>
+                        <th class="w2">数量</th>
+                        <th class="w4">物料号</th>
+                        <th class="w1">类型</th>
+                        <th class="w3">物理名称</th>
+                        <th class="w3">采购单号</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

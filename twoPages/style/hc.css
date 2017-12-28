@@ -1,0 +1,387 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?1ewkup');
+  src:  url('../fonts/icomoon.eot?1ewkup#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1ewkup') format('truetype'),
+    url('../fonts/icomoon.woff?1ewkup') format('woff'),
+    url('../fonts/icomoon.svg?1ewkup#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-a:before {
+  content: "\e900";
+}
+.icon-icon-aa:before {
+  content: "\e901";
+}
+.icon-icon-ab:before {
+  content: "\e902";
+}
+.icon-icon-ac:before {
+  content: "\e903";
+}
+.icon-icon-ad:before {
+  content: "\e904";
+}
+.icon-icon-ae:before {
+  content: "\e905";
+}
+.icon-icon-af:before {
+  content: "\e906";
+}
+.icon-icon-ag:before {
+  content: "\e907";
+}
+.icon-icon-ah:before {
+  content: "\e908";
+}
+.icon-icon-ai:before {
+  content: "\e909";
+}
+.icon-icon-aj:before {
+  content: "\e90a";
+}
+.icon-icon-ak:before {
+  content: "\e90b";
+}
+.icon-icon-al:before {
+  content: "\e90c";
+}
+.icon-icon-am:before {
+  content: "\e90d";
+}
+.icon-icon-an:before {
+  content: "\e90e";
+}
+.icon-icon-ao:before {
+  content: "\e90f";
+}
+.icon-icon-ap:before {
+  content: "\e910";
+}
+.icon-icon-aq:before {
+  content: "\e911";
+}
+.icon-icon-ar:before {
+  content: "\e912";
+}
+.icon-icon-as-copy:before {
+  content: "\e913";
+}
+.icon-icon-as:before {
+  content: "\e914";
+}
+.icon-arrow-right:before {
+  content: "\ea34";
+}
+.icon-arrow-left:before {
+  content: "\ea38";
+}
+
+      *{margin:0;padding: 0;}
+      body{
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+      }
+      .container{
+        width: 100%;
+        min-width: 1600px;
+      }
+      .header{
+        font-weight: 100%;
+        height: 56px;
+        background-color: #2A4765;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .wdl{
+        margin-top: 16px;
+        margin-right: 15%;
+        font-family:'MicrosoftYaHei';
+        font-size:18px;
+        color:#ffffff;
+        letter-spacing:1.34px;
+        text-align:left;
+      }
+      .grayBac{
+        background-color: #F5F5F5;
+      }
+      .content{
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+      }
+      .page{
+        margin-top: 39px;
+        width: 67%;
+        height: 100%;
+        background-color: white;
+        border-width: 1px 1px 1px 1px;
+        border-style: solid;
+        border-color: #dedede;
+        min-height: 500px;
+      }
+      .topPage{
+        height: 70px;
+        display: -webkit-flex;
+        display: flex;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: #dedede;
+      }
+      .qxpz{
+        margin-top: 23px;
+        margin-left: 29px;
+        font-family:'MicrosoftYaHei';
+        font-size:20px;
+        color:#333333;
+        letter-spacing:1.49px;
+        text-align:left;
+      }
+      .bottomPage{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .buttonList{
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 25px;
+        margin-right: 11px;
+        align-self: flex-end;
+
+      }
+      .butLine{
+        margin:auto 9px auto 8px;
+        opacity:0.2;
+        border:1px solid #979797;
+        width:2px;
+        height:14px;
+      }
+      .button{
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+      }
+      .icon{
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+      }
+      .iconTest{
+        font-family:MicrosoftYaHei;
+        font-size:14px;
+        color:#333333;
+        letter-spacing:1.04px;
+        text-align:left;
+      }
+      .pageTab{
+        width: 97%;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .pageTab tr.tBodyTr{
+        height: 42px;
+        font-family:PingFangSC-Regular;
+        font-size:14px;
+        color:#666666;
+        letter-spacing:0.58px;
+      }
+       .pageTab td{
+        border-width: 0px 1px 1px 1px;
+        border-style: solid;
+        border-color:#dedede 
+      }
+
+      .pageTab th{
+        border-width: 1px 1px 0px 1px;
+        border-color: #dedede;
+        border-style: solid;
+        font-family:MicrosoftYaHei-Bold;
+        font-size:14px;
+        color:#666666;
+        letter-spacing:0;
+      }
+      .tBodyBaox{
+        opacity:0.54;
+        background:#999999;
+        width:16px;
+        height:16px;
+      }
+      .thead{
+        height: 49px;
+      }
+      .th1{
+        width: 3%;
+      }
+      .th2{
+        width: 16%;
+      }
+      .th3{
+        width: 20%;
+      }
+      .th4{
+        width: 31%;
+      }
+      .th5{
+        width: 30%;
+      }
+      .hidPage{
+          width: 530px;
+          height: 641px;
+          margin-top: 337px;
+          position: absolute;
+          background:#ffffff;
+          box-shadow:0 2px 6px 0 rgba(0,0,0,0.50);
+          border-radius:4px;
+      }
+      .hidTop{
+        display: -webkit-flex;
+        display: flex;
+        height: 49px;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: #e9e9e9
+      }
+      .tjgly{
+        font-family:PingFangSC-Regular;
+        font-size:16px;
+        color:#333333;
+        line-height:21px;
+        text-align:left;
+        margin-top: 16px;
+        margin-left: 16px;
+
+      }
+      .hidBody{
+        display: -webkit-flex;
+        display: flex;
+      }
+      .hidBodyL{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        margin-left: 17px;
+
+      }
+      .hidBodyR{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+      }
+      .xzk{
+        border:1px solid #dedede;
+        width:357px;
+        height:415px;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+      }
+      .xzkRow{
+        display: -webkit-flex;
+        display: flex;
+        margin-left: 15px;
+        margin-top: 10px;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .xzkRowBox{
+        margin-right: 50px;
+        opacity:0.54;
+        background:#999999;
+        width:16px;
+        height:16px;
+      }
+      .renyuan{
+        font-family:MicrosoftYaHei;
+        font-size:16px;
+        color:#999999;
+      }
+      .yxk{
+        border:1px solid #dedede;
+        width:139px;
+        height:415px;
+      }
+      .yxkRow{
+        margin-left: 15px;
+        margin-top: 10px;
+      }
+      .text1{
+        font-family:MicrosoftYaHei;
+        font-size:16px;
+        color:#666666;
+        line-height:16px;
+        margin-top: 13px;
+        margin-bottom: 15px;
+        white-space: nowrap;
+      }
+      .hidFoot{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        margin-top: 17px;
+      }
+      .fzdq{
+        font-family:MicrosoftYaHei;
+        font-size:14px;
+        color:#999999;
+        margin-left: 15px;
+        margin-right: 14px;
+      }
+      .selectCity{
+        background:#ffffff;
+        border:1px solid #e1e1e1;
+        border-radius:4px;
+        width:118px;
+        height:36px;
+      }
+      .hidFbtn{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 29px;
+      }
+      .quxiao{
+        background:#ffffff;
+        border:1px solid #d9d9d9;
+        border-radius:4px;
+        width:63px;
+        height:30px;
+        font-family:PingFangSC-Regular;
+        font-size:14px;
+        color:#666666;
+        line-height:21px;
+        margin-right: 8px;
+        border:1px solid #dedede;
+      }
+      .queding{
+        background:#108ee9;
+        border-radius:4px;
+        width:65px;
+        height:32px;
+        font-family:PingFangSC-Regular;
+        font-size:14px;
+        color:#ffffff;
+        line-height:21px;
+        margin-right: 14px;
+        border:1px solid #dedede;
+      }
