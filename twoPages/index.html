@@ -43,22 +43,19 @@
             let shfb=data['response'][j]['shfb'];
             let xiala=$(".selectCity option:selected").text();
             let exitName=$('.tdName').text().trim();
+            var cfgh="";
             if(a==name){
-              var cfgh="";
               if(exitName.indexOf(name)==-1){
                   let exitTab=$('.pageTab tbody').html();
                   $('.pageTab tbody').html(exitTab+'<tr class="tBodyTr"><td><input class="tBodyBaox" type="checkbox" name=""></td><td>'+gh+'</td><td class="tdName">'+name+'</td><td>'+shfb+'</td><td>'+xiala+'</td></tr>');
                 }else{
-                  cfgh=cfgh+gh+'.';
+                  alert("您添加的工号为"+gh+"员工重复了！");
                 };
             };
-              ;
-          }
+              
+          };
 
         };
-        if(cfgh!=""){
-          alert("您添加的员工重复了！");
-        }
         $('.yxk').html("");
         grayTd();
       });
